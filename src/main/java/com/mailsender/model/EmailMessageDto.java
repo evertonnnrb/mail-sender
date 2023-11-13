@@ -9,4 +9,12 @@ public record EmailMessageDto(
         @NotBlank @Email String to,
         @NotBlank String title,
         @NotBlank String message) {
+
+    public EmailMessageDto(String owner, String from, String to, String title, String message) {
+        this.owner = owner;
+        this.from = from;
+        this.to = to;
+        this.title = title;
+        this.message = message;
+    }
 }

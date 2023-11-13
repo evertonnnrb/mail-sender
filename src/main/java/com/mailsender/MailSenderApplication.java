@@ -17,11 +17,11 @@ public class MailSenderApplication {
     public static void main(String[] args) {
         SpringApplication.run(MailSenderApplication.class, args);
     }
-
+/*
     @EventListener(ApplicationReadyEvent.class)
     public void sendMail() {
         EmailMessageDto dto = new EmailMessageDto("APLLICATION", "nnrb.suporte@gmail.com", "everton.nnrb@gmail.com",
                 "TESTE MAIL SENDER", "TRYING SEND A EMAIL WITH SPRING APPLICATION");
         mailSenderService.senderEmail(dto);
-    }
+    }*/
 }
